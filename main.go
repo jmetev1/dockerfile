@@ -28,7 +28,7 @@ const startupMessage = `
 
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hello! you've requested a bad place %s\n", r.URL.Path)
+		fmt.Fprintf(w, "Hello! you've requested a bad place times three %s\n", r.URL.Path)
 	})
 
 	port := os.Getenv("PORT")
